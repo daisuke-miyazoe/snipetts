@@ -42,7 +42,6 @@ from snippets.models import Snippet
 #         response = self.client.get("/")
 #         self.assertContains(response, "Djangoスニペット", status_code=200)
 
-<<<<<<< HEAD
 #     def test_top_page_uses_expected_template(self):
 #         response = self.client.get("/")
 #         self.assertTemplateUsed(response, "snippets/top.html")
@@ -97,10 +96,3 @@ class TopPageRenderSnippetsTest(TestCase):
         response = top(request)
         print(self.user.username)
         # self.assertContains(response, self.user.username)
-=======
-    def test_top_returns_expected_content(self):
-        # request = HttpRequest()
-        # response = top(request)
-        response = self.client.get("/")
-        self.assertEqual(response.content, b"Hello World")
->>>>>>> 1839754d0c2141e5341caaf87f23f1db96190c2d
